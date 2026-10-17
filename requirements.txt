@@ -1,0 +1,22 @@
+# IMDB Movie Review Sentiment Analysis - Dependencies
+# Python 3.10+ compatible
+
+# Core Scientific & Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# Natural Language Processing & Machine Learning
+scikit-learn>=1.3.0
+textblob>=0.17.0
+joblib>=1.3.0
+
+# Interactive Dashboard & Visualizations
+streamlit>=1.30.0
+plotly>=5.18.0
+
+# Testing & Quality Assurance
+pytest>=8.0.0
+
+# Big Data Analytics (Optional for distributed PySpark cluster execution)
+# pyspark>=3.4.0

@@ -1,0 +1,27 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environments
+env/
+venv/
+.env
+
+# Large raw datasets (downloadable via train_model.py or link)
+data/aclImdb/
+data/*.tar.gz
+data/*.xlsx
+
+# Keep sample dataset for out-of-the-box demo
+!data/sample_reviews.csv
+
+# Microsoft Word temporary lock files
+~$*
+*.tmp
+
+# OS specific
+.DS_Store
+Thumbs.db

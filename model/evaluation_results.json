@@ -1,0 +1,152 @@
+{
+  "Baseline (TextBlob Lexicon)": {
+    "accuracy": 0.6872,
+    "precision_macro": 0.7531354705438648,
+    "recall_macro": 0.683247777566529,
+    "f1_macro": 0.6625251336780238,
+    "roc_auc": null,
+    "confusion_matrix": [
+      [
+        521,
+        710
+      ],
+      [
+        72,
+        1197
+      ]
+    ],
+    "per_class": {
+      "Negative": {
+        "precision": 0.8785834738617201,
+        "recall": 0.4232331437855402,
+        "f1_score": 0.5712719298245614
+      },
+      "Positive": {
+        "precision": 0.6276874672260094,
+        "recall": 0.9432624113475178,
+        "f1_score": 0.7537783375314862
+      }
+    },
+    "total_samples": 2500
+  },
+  "Multinomial Naive Bayes": {
+    "accuracy": 0.8687010640433648,
+    "precision_macro": 0.8687186097769006,
+    "recall_macro": 0.868694831336043,
+    "f1_macro": 0.8686977563969241,
+    "roc_auc": 0.9436315914209755,
+    "confusion_matrix": [
+      [
+        2151,
+        335
+      ],
+      [
+        319,
+        2176
+      ]
+    ],
+    "per_class": {
+      "Negative": {
+        "precision": 0.8708502024291498,
+        "recall": 0.8652453740949316,
+        "f1_score": 0.8680387409200968
+      },
+      "Positive": {
+        "precision": 0.8665870171246516,
+        "recall": 0.8721442885771543,
+        "f1_score": 0.8693567718737515
+      }
+    },
+    "total_samples": 4981
+  },
+  "Logistic Regression (C=1.0)": {
+    "accuracy": 0.8921903232282674,
+    "precision_macro": 0.8923786198535186,
+    "recall_macro": 0.8921707453523298,
+    "f1_macro": 0.8921736171184371,
+    "roc_auc": 0.9608143076176489,
+    "confusion_matrix": [
+      [
+        2191,
+        295
+      ],
+      [
+        242,
+        2253
+      ]
+    ],
+    "per_class": {
+      "Negative": {
+        "precision": 0.9005343197698314,
+        "recall": 0.8813354786806115,
+        "f1_score": 0.8908314698109372
+      },
+      "Positive": {
+        "precision": 0.8842229199372057,
+        "recall": 0.9030060120240481,
+        "f1_score": 0.8935157644259369
+      }
+    },
+    "total_samples": 4981
+  },
+  "Logistic Regression (C=2.5)": {
+    "accuracy": 0.8976109215017065,
+    "precision_macro": 0.8976919931083285,
+    "recall_macro": 0.8975982536271255,
+    "f1_macro": 0.8976032903545363,
+    "roc_auc": 0.9635855782361182,
+    "confusion_matrix": [
+      [
+        2214,
+        272
+      ],
+      [
+        238,
+        2257
+      ]
+    ],
+    "per_class": {
+      "Negative": {
+        "precision": 0.9029363784665579,
+        "recall": 0.8905872888173774,
+        "f1_score": 0.8967193195625759
+      },
+      "Positive": {
+        "precision": 0.8924476077500989,
+        "recall": 0.9046092184368737,
+        "f1_score": 0.8984872611464968
+      }
+    },
+    "total_samples": 4981
+  },
+  "Calibrated LinearSVC (C=0.5)": {
+    "accuracy": 0.8982132101987552,
+    "precision_macro": 0.8982134076248793,
+    "recall_macro": 0.8982146916520087,
+    "f1_macro": 0.8982131445572401,
+    "roc_auc": 0.9644395790777048,
+    "confusion_matrix": [
+      [
+        2235,
+        251
+      ],
+      [
+        256,
+        2239
+      ]
+    ],
+    "per_class": {
+      "Negative": {
+        "precision": 0.8972300281011641,
+        "recall": 0.8990345937248592,
+        "f1_score": 0.8981314044605184
+      },
+      "Positive": {
+        "precision": 0.8991967871485944,
+        "recall": 0.8973947895791583,
+        "f1_score": 0.8982948846539619
+      }
+    },
+    "total_samples": 4981
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "model_name": "TF-IDF + Calibrated Logistic Regression",
+  "algorithm": "LogisticRegression (L2 regularization, C=2.5)",
+  "vectorizer": "TfidfVectorizer(ngram_range=(1,2), sublinear_tf=True)",
+  "vocabulary_size": 25000,
+  "classes": [
+    "Negative",
+    "Positive"
+  ],
+  "train_samples": 19922,
+  "test_samples": 4981,
+  "test_accuracy": 0.8976109215017065,
+  "test_macro_f1": 0.8976032903545363,
+  "test_roc_auc": 0.9635855782361182,
+  "training_date": "2026-10-17T16:58:05.531676",
+  "random_state": 42
+}
