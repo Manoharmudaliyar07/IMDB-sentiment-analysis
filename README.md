@@ -171,8 +171,4 @@ python train_model.py --data-path data/train.xlsx --max-features 25000
 
 ---
 LIVE DEMO URL:
-**[Live Demo: View the Streamlit App](https://imdb-review-insights.streamlit.app/)**
-### Q5: How is Explainable AI (XAI) implemented in this application?
-Because Logistic Regression is a linear classifier, the decision logit is the dot product of feature weights and TF-IDF values:  
-$$\text{logit} = \sum (w_i \times \text{tfidf}_i) + b$$  
-For any user review, the application calculates the exact contribution of each non-zero n-gram, extracts the highest positive and negative contributors, and displays them as interactive badges.
+**[Live Demo: ](https://imdb-review-insights.streamlit.app/)**
