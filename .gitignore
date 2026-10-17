@@ -10,18 +10,23 @@ env/
 venv/
 .env
 
-# Large raw datasets (downloadable via train_model.py or link)
-data/aclImdb/
-data/*.tar.gz
-data/*.xlsx
+# Jupyter Notebooks (not needed for deployment/showcase)
+*.ipynb
 
-# Keep sample dataset for out-of-the-box demo
-!data/sample_reviews.csv
-
-# Microsoft Word temporary lock files
+# Project reports & Word documents
+*.docx
+*.doc
 ~$*
 *.tmp
 
-# OS specific
+# Large raw datasets (only sample_reviews.csv is tracked for demo)
+data/aclImdb/
+data/*.tar.gz
+data/*.xlsx
+data/*.csv
+!data/sample_reviews.csv
+
+# OS specific files
 .DS_Store
 Thumbs.db
+desktop.ini
