@@ -170,27 +170,8 @@ python train_model.py --data-path data/train.xlsx --max-features 25000
    - Sentiment distribution pie/bar charts and export of scored CSV with probabilities.
 
 ---
-
-## 🎓 Final-Year Viva Defense Questions & Answers
-
-### Q1: What is the core difference between lexicon-based and supervised machine learning approaches in NLP?
-- **Lexicon-Based (TextBlob):** Uses an un-trained dictionary of words with pre-assigned polarity weights. It is zero-shot, fast, but blind to domain-specific context, film jargon, sarcasm, and complex syntax.
-- **Supervised ML (TF-IDF + LogReg):** Learns statistical word and phrase associations directly from labeled training data. It captures bigrams (*'not good'*, *'waste of time'*) and weights words based on their empirical correlation with ground truth labels.
-
-### Q2: Why did you use Sublinear TF scaling in your TF-IDF vectorizer?
-Sublinear TF scales term frequency logarithmically:  
-$$\text{sublinear\_tf} = 1 + \log(\text{tf}) \quad \text{for } \text{tf} > 0$$  
-In movie reviews, a user repeating the word *"terrible"* 10 times is not 10 times as negative as someone using it once. Sublinear scaling prevents repetitive words from disproportionately skewing the feature vector.
-
-### Q3: What is the PySpark Python UDF bottleneck and how is it addressed in BDA?
-Standard PySpark Python UDFs require data to be serialized from the JVM, transmitted via inter-process communication (IPC) to a Python worker daemon, evaluated, and serialized back to the JVM. This causes high CPU overhead and prevents Spark's Catalyst Optimizer from optimizing execution.  
-In production Big Data pipelines, this is resolved by using **Spark MLlib native transformers** or **Vectorized Pandas UDFs (PyArrow)**. For real-time single-sample inference, a lightweight Scikit-Learn pipeline is deployed.
-
-### Q4: How was data leakage prevented during development?
-1. Removed 96 duplicate reviews present in the raw data prior to splitting.
-2. Executed a **Stratified 80/20 train/test split** with a fixed random seed (`random_state=42`).
-3. Fitted the TF-IDF vocabulary **strictly on the 80% training set**; the test set was only transformed, ensuring zero exposure to test vocabulary during training.
-
+LIVE DEMO URL:
+**[Live Demo: View the Streamlit App](https://imdb-review-insights.streamlit.app/)**
 ### Q5: How is Explainable AI (XAI) implemented in this application?
 Because Logistic Regression is a linear classifier, the decision logit is the dot product of feature weights and TF-IDF values:  
 $$\text{logit} = \sum (w_i \times \text{tfidf}_i) + b$$  
