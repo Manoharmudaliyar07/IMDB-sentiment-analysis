@@ -122,7 +122,7 @@ All metrics below were computed on a strictly leak-free **holdout test set of 4,
 Ensure Python 3.10+ is installed:
 ```powershell
 # Clone or navigate to the project directory
-cd "C:\Users\manoh\OneDrive\Desktop\bda miniproject"
+cd "C:\Users\userName\OneDrive\Desktop\bda miniproject"
 
 # Install dependencies
 pip install -r requirements.txt
