@@ -1,6 +1,8 @@
 # 🎬 IMDb Movie Review Sentiment Analysis
 > **Big Data Analytics (BDA) & Machine Learning Engineering Mini Project**  
 > Scalable Text Ingestion, NLP Preprocessing, Supervised Machine Learning, Explainable AI (XAI), and Interactive Streamlit Dashboard.
+<img width="1807" height="936" alt="image" src="https://github.com/user-attachments/assets/355135a7-b2ad-4a09-afb6-05a97f2c7f7c" />
+
 
 ---
 
